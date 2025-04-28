@@ -1,0 +1,526 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #111;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ff4500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ff4500;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e63e00;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 50%;
+  border: 5px solid #ff4500;
+}
+
+.about {
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff4500;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #777;
+}
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff4500;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  background: #ff4500;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e63e00;
+}
+.about-page {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff4500;
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.about-skills {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-skills h2 {
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+.about-skills ul {
+  list-style: inside;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.services-page {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.services-page h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #ff4500;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #74bad6;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  .about-page, .services-page, .contact {
+    padding: 50px 20px;
+  }
+
+  .header .nav {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 8px;
+    display: none;
+  }
+}
+.contact-page {
+  padding: 100px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.contact-page h1 {
+  font-size: 3rem;
+  color: #ff4500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-page p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.contact-info p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.talk-out-btn a{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  right: 29%;
+  top: 7%;
+  font-size: 2.8rem;
+}
+/* Let's Talk Page */
+.talk-page {
+  padding: 100px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0d0d0d;
+}
+
+.talk-page h1 {
+  font-size: 3rem;
+  color: #ff4500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.talk-page p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.talk-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.talk-form input,
+.talk-form textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+}
+
+.talk-form textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.talk-form button.btn {
+  background-color: #ff4500;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.talk-form button.btn:hover {
+  background-color: #e03e00;
+}
+
+/* Back to Home Button */
+.back-home {
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 43.6%;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #555;
+}
+.back-home-talk {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: rgb(255, 0, 0);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-home-talk:hover {
+  background-color: #555;
+}
+/* Let's Talk Page */
+.talk-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.talk-container {
+  background: #111;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.talk-container h1 {
+  font-size: 2.8rem;
+  color: #ff4500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.talk-container p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.talk-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff4500;
+  background: #1a1a1a;
+}
+
+.talk-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.talk-form button.btn {
+  background: #ff4500;
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.talk-form button.btn:hover {
+  background: #e03e00;
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  margin-top: 25px;
+  color: #ff4500;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  color: #e03e00;
+}
+.hire-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ff4500;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #e03e00;
+  transform: scale(1.05);
+}
+
+.hire-btn .icon {
+  width: 24px;
+  height: 24px;
+}
